@@ -5,7 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "webpack": "webpack"
   },
   "keywords": [],
   "author": "",
@@ -15,8 +16,19 @@
   },
   "devDependencies": {
     "babel-jest": "^17.0.2",
+    "babel-loader": "^6.2.10",
     "babel-plugin-transform-amd-to-commonjs": "^0.2.0",
     "babel-preset-es2015": "^6.18.0",
-    "jest": "^17.0.3"
+    "jest": "^17.0.3",
+    "webpack": "^1.14.0"
+  },
+  "jest": {
+    "moduleDirectories": [
+      "node_modules",
+      "<rootDir>/more-modules"
+    ],
+    "moduleNameMapper": {
+      "module-alias": "aliased-module"
+    }
   }
 }

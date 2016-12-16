@@ -1,4 +1,8 @@
 {
   "presets": ["es2015"],
-  "plugins": ["transform-amd-to-commonjs"]
+  "env": {
+    "test": {
+      "plugins": ["transform-amd-to-commonjs"]
+    }
+  }
 }
