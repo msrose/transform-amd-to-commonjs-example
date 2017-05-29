@@ -1,5 +1,8 @@
 # transform-amd-to-commonjs-example
 
+[![dependencies Status](https://david-dm.org/msrose/transform-amd-to-commonjs-example/status.svg)](https://david-dm.org/msrose/transform-amd-to-commonjs-example)
+[![devDependencies Status](https://david-dm.org/msrose/transform-amd-to-commonjs-example/dev-status.svg)](https://david-dm.org/msrose/transform-amd-to-commonjs-example?type=dev)
+
 Example usage of [babel-plugin-transform-amd-to-commonjs](https://github.com/msrose/babel-plugin-transform-amd-to-commonjs).
 
 Uses [babel-plugin-transform-amd-to-commonjs](https://github.com/msrose/babel-plugin-transform-amd-to-commonjs) to allow [jest](https://facebook.github.io/jest/) to require AMD files.

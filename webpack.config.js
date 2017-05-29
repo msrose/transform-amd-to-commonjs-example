@@ -4,23 +4,25 @@ module.exports = {
   entry: './index',
   output: {
     filename: 'bundle.js',
-    path: './build',
+    path: path.resolve('./build'),
     library: 'TestBundleDayum'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /.js$/,
-        loader: 'babel'
+        exclude: /node_modules/,
+        loader: 'babel-loader'
       }
     ]
   },
   resolve: {
-    root: [
-      path.resolve('./more-modules')
+    modules: [
+      path.resolve('./more-modules'),
+      'node_modules'
     ],
     alias: {
-      "module-alias": "aliased-module"
+      'module-alias': 'aliased-module'
     }
   }
 };
