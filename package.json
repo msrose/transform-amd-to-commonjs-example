@@ -16,7 +16,7 @@
   "devDependencies": {
     "babel-jest": "^22.0.1",
     "babel-loader": "^7.1.2",
-    "babel-plugin-transform-amd-to-commonjs": "^1.0.0",
+    "babel-plugin-transform-amd-to-commonjs": "^1.1.0",
     "babel-preset-env": "^1.6.1",
     "jest": "^22.0.1",
     "webpack": "^3.10.0"
