@@ -1,8 +1,12 @@
 {
-  "presets": ["env"],
+  "presets": [
+    "@babel/preset-env"
+  ],
   "env": {
     "test": {
-      "plugins": ["transform-amd-to-commonjs"]
+      "plugins": [
+        "transform-amd-to-commonjs"
+      ]
     }
   }
 }

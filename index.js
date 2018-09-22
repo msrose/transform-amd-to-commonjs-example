@@ -7,7 +7,8 @@ define([
   './double-export-module',
   './other-double-export-module',
   './arrow-function-module',
-  './arrow-function-implicit-return'
+  './arrow-function-implicit-return',
+  './rest-factory-module.js',
 ], function(
   dayum,
   otherModule,
@@ -17,7 +18,8 @@ define([
   doubleExport,
   otherDoubleExport,
   arrowFunction,
-  implicitReturn
+  implicitReturn,
+  restFactory
 ) {
   return {
     message: 'I got a two-syllable ' + dayum.daaaaaaayum() + ' in that dress.',
@@ -28,6 +30,7 @@ define([
     doubleExport: doubleExport.result,
     otherDoubleExport: otherDoubleExport.result,
     arrowFunction: arrowFunction.message,
-    implicitReturn: implicitReturn.message
+    implicitReturn: implicitReturn.message,
+    restFactory: restFactory.result
   };
 });

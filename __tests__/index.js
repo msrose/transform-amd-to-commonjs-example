@@ -36,4 +36,8 @@ describe('Main module', () => {
   it('has another message from implicit return factory', () => {
     expect(main.implicitReturn).toContain('implicit return');
   });
+
+  it('has another message for a factory with rest arguments', () => {
+    expect(main.restFactory).toContain('rest factory');
+  });
 });
